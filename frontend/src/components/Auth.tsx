@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { BACKEND_URL } from "../../config";
 
 
+
 export const Auth = ({ type }: { type: "signup" | "signin" }) => {
     const navigate = useNavigate();
     const [postInputs, setPostInputs] = useState<SignupInput>({
@@ -64,7 +65,9 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
                 <div className="flex justify-between pt-8">
                 <button onClick={sendrRequest} type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none
                     focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2
-                    dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-full ">Signup</button>
+                    dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-full ">
+                       <Link to={type === "signin" ? "Signin" : "Signup"}> {type === "signin" ? "Signin" : "Signup"}</Link> 
+                    </button>
                 </div>
                 </div>
                 

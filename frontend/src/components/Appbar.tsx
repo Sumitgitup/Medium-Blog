@@ -8,7 +8,7 @@ export const Appbar = () => {
                 to={"/blogs"}
                 className="flex flex-col justify-center cursor-pointer"
             >
-                Medium
+                Between
             </Link>
             <div>
                 <Link to={"/publish"}>

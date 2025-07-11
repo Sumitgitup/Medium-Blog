@@ -23,7 +23,7 @@ export const BlogsCard = ({
                 {authorName}
             </div>
 
-            <div className="text-sm flex justify-center flex-col flex justify-center flex-col pl-2">
+            <div className="text-sm flex justify-center flex-col pl-2">
                 <Circle />
             </div>
             <div className="text-sm flex justify-center flex-col pl-2 font-thin text-slate-500">
